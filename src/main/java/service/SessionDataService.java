@@ -14,7 +14,7 @@ public class SessionDataService {
 
     public static void saveSessionData(String login, String uuid, CookieStore cookieStore) {
         SessionDataDTO sessionDataDTO = new SessionDataDTO(uuid, cookieStore);
-        File sessionDataFile = new File(login + ".txt");
+        File sessionDataFile = new File(login + ".dat");
 
         try {
             ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(sessionDataFile));
@@ -28,7 +28,7 @@ public class SessionDataService {
     }
 
     public static Optional<SessionDataDTO> loadSessionData(String login) {
-        File sessionDataFile = new File(login + ".txt");
+        File sessionDataFile = new File(login + ".dat");
         SessionDataDTO sessionDataDTO;
 
         if (!sessionDataFile.exists()) {
