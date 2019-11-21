@@ -27,9 +27,9 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.brunocvcunha.instagram4j_cyrus07424</groupId>
-            <artifactId>instagram4j_cyrus07424</artifactId>
-            <version>1.13-SNAPSHOT</version>
+            <groupId>org.brunocvcunha.instagram4j</groupId>
+            <artifactId>instagram4j</artifactId>
+            <version>1.13</version>
         </dependency>
 
         <dependency>
